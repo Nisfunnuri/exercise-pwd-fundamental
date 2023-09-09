@@ -60,10 +60,13 @@ console.log("sudut ketiga adalah >>",sudut3);
 // INPUT
 let date = new Date("09/05/2023");
 let oldDate = new Date("07/17/2023");
+
 // PROCESS
 let diff = date - oldDate;
 let dateInMili = 1000 * 60 * 60 *24;
 let diffDate = diff/dateInMili;
+// console.log(diffDate);
+
 // OUTPUT
 console.log(`selisih dari ${date} ke ${oldDate} adalah >> ${diffDate} Hari`);
 

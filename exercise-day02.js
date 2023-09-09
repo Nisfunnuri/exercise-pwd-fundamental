@@ -47,7 +47,7 @@ console.log(jumlah);
 
 
 // FACTORIAL
-let angkaA = 1;
+let angkaA = 7;
 let factor = 1;
 
 for (let j = 1; j <= angkaA; j++) {
@@ -57,18 +57,25 @@ for (let j = 1; j <= angkaA; j++) {
 console.log(factor);
 
 // FIBONACCI
-let fibo = 1;
+let fibo = 7;
 let num1 = 0;
 let num2 = 1;
 let result = "";
-for (let i = 0; i < fibo; i++) {
-    console.log(fibo);
-    result = num1 + num2
+
+for (let i = 1; i <= fibo; i++) {
+    console.log(i);
+    result += `${num1}`;
+    let nextNum = num1 + num2;
+    console.log(nextNum);
+
     num1 = num2
-    num2 = result
+    num2 = nextNum
 }
 console.log(result);
 
+
+
+// 
 let baris = 5;
 let kolom = 5;
 
