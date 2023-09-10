@@ -33,7 +33,6 @@ console.log(nilaiMaximal);
 
 // Create a function that can create a triangle pattern according to the height
 function pattern(masukkanPanjang){
-    let number11 = 1;
 
 for (let i = 1; i <= masukkanPanjang; i++) {
     let p = "";
@@ -68,7 +67,6 @@ function fizzBuzzReplace(n) {
   }
 }
 
-// Example usage:
 fizzBuzzReplace(15);
 
 
@@ -81,4 +79,46 @@ function stringToArray(inputString) {
   let inputString = "Hello World";
   let kalimat = stringToArray(inputString);
   console.log(kalimat);
+  
+// 
+  function removeAngkaGanjil(array) {
+    let angka = [];
+  
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] % 2 === 0) {
+        angka.push(array[i]);
+      }
+    }
+  
+    return angka;
+  }
+  
+
+  let inputAngka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const fungsi = removeAngkaGanjil(inputAngka);
+  console.log(fungsi); 
+  
+
+
+
+  function BMI(weight, height) {
+    const bmi = weight / (height * height);
+  
+    if (bmi < 18.5) {
+      return "less weight";
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+      return "ideal";
+    } else if (bmi >= 25.0 && bmi <= 29.9) {
+      return "overweight";
+    } else if (bmi >= 30.0 && bmi <= 39.9) {
+      return "very overweight";
+    } else {
+      return "obesity";
+    }
+  }
+  
+  let weight = 70;
+  let height = 1.56; 
+  const result = BMI(weight, height);
+  console.log(result);
   
