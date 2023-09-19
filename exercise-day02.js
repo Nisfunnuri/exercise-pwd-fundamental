@@ -83,11 +83,12 @@ for (let i = 0; i < baris; i++) {
   let perBaris = "";
   for (let j = 0; j < kolom; j++) {
     console.log(j);
-    // if (j % 2 === 0) {
+    if (j % 2 === 0) {
       perBaris += "#";
-    // } else {
-      perBaris += "*";
+    } else {
+        perBaris += "*";
     }
-  }
+}
+}
   console.log(perBaris);
 // }
